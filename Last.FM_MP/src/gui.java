@@ -27,9 +27,10 @@ public class gui {
 	
 		private static void createAndShowGUI() {
 			JFrame f = new JFrame("hello :)");
-                                                f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                                                f.setSize(640,480);
-			
+			f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			f.setSize(640,480);
+                                                
+             
 			//System.setProperty("proxyHost", "wwwcache-20.cs.nott.ac.uk");
 			//System.setProperty("proxyPort", "3128");
 			String key = "c16451e142b6902ae41ae727b50f6bf3"; 
