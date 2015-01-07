@@ -5,6 +5,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Collection;
+import java.util.logging.Logger;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -29,20 +30,20 @@ public class gui {
 			JFrame f = new JFrame("hello :)");
 			f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			f.setSize(640,480);
+			System.out.println("test");
                                                 
              
-			//System.setProperty("proxyHost", "wwwcache-20.cs.nott.ac.uk");
-			//System.setProperty("proxyPort", "3128");
 			String key = "c16451e142b6902ae41ae727b50f6bf3"; 
 			String secret = "fc8ebb1b3d9c16be60a488cc322ff048";
 			String searchTag = "rock";
 			Collection<Tag> tags = Tag.search(searchTag, key);
-			
+			Logger.global.info("test");
 			
 			MediaPlayer mp = new MediaPlayer(f);//make da media player - up here so can be passed to sphere
 			
 			panel = new visualisation(mp);
 			f.add(panel, BorderLayout.NORTH);/////////////sphereeeeee
+			
 			
 			
 			
